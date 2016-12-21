@@ -3,7 +3,7 @@
 if [ ! -f "$1" ]
 then
 	echo "Error, script not found."
-elif ! (echo "$1" | grep -q "/home/pi/")
+elif ! (echo "$1" | grep -q "/home/$USER/")
 then
 	echo "Error, please type the full path of the script."
 elif ! (cat "$1" | grep -q "#!/bin/bash")
